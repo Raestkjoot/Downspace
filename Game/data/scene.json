@@ -1,0 +1,112 @@
+{
+	"root": {
+		"name": "_root",
+		"transform": {
+			"position": [ 0, 0, 0 ],
+			"rotation": [ 0, 0, 0 ],
+			"scale": [ 1, 1, 1 ]
+		},
+		"components": [],
+		"children": [
+			{
+				"name": "PointCounter",
+				"transform": {
+					"position": [ 0, 0, 0 ],
+					"rotation": [ 0, 0, 0 ],
+					"scale": [ 1, 1, 1 ]
+				},
+				"components": [
+					{
+						"typeId": "POINTSCOUNTER",
+						"serializedData": {
+
+						}
+					}
+				],
+				"children": []
+			},
+			{
+				"name": "Player",
+				"transform": {
+					"position": [ 0, 300, 0 ],
+					"rotation": [ 0, 0, 0 ],
+					"scale": [ 2, 2, 1 ]
+				},
+				"components": [
+					{
+						"typeId": "SPRITE_RENDERER",
+						"serializedData": {
+							"atlas": "platformer-art-deluxe",
+							"sprite": "19.png"
+						}
+					},
+					{
+						"typeId": "RIGIDBODY",
+						"serializedData": {
+							"bodyType": 2,
+							"isSensor": false,
+							"size": [ 19, 19 ],
+							"shapeType": 1
+						}
+					},
+					{
+						"typeId": "CONTROLLER",
+						"serializedData": {
+							"movSpeed": 3,
+							"jumpPower": 5
+						}
+					}
+				],
+				"children": []
+			},
+			{
+				"name": "Camera",
+				"transform": {
+					"position": [ 0, 300, 0 ],
+					"rotation": [ 0, 0, 0 ],
+					"scale": [ 1, 1, 1 ]
+				},
+				"components": [
+					{
+						"typeId": "CAMERA",
+						"serializedData": {
+							"projectionType": 0,
+							"projectionParams": [ 300, -1, 1 ]
+						}
+					},
+					{
+						"typeId": "FOLLOW_TARGET",
+						"serializedData": {
+							"target": "Player",
+							"offsetX": 0,
+							"lockX": true,
+							"lockY": false
+						}
+					},
+					{
+						"typeId": "OBJECT_COUNT_UI",
+						"serializedData": {}
+					}
+				],
+				"children": []
+			},
+			{
+				"name": "Level",
+				"transform": {
+					"position": [ 0, 0, 0 ],
+					"rotation": [ 0, 0, 0 ],
+					"scale": [ 1, 1, 1 ]
+				},
+				"components": [
+					{
+						"typeId": "LEVEL",
+						"serializedData": {
+
+						}
+					}
+				],
+				"children": []
+			}
+		]
+	}
+}
