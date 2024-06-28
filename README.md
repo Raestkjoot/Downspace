@@ -3,7 +3,7 @@ Our final project for the course: Game Programming (Autumn 2023). <br>
 This game is based on the vertical scrolling shooter game [*Downwell*](https://downwellgame.com/).
 
 ## How to build:
-- Drag the project folder into SimpleRenderEngine
+- Drag the project folder into [SimpleRenderEngine](https://github.com/mortennobel/SimpleRenderEngineProject)
 - Update your CMake file to include the final project folder name `add_subdirectory(GaProg_Group5)`
 - Generate CMake and then build and run to launch the game
 
